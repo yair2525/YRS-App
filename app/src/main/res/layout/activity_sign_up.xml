@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/bg"
+    tools:context=".SignUp"
+    >
+
+    <TextView
+        android:id="@+id/txtTitleSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="36dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+
+        <EditText
+            android:id="@+id/edtSecureCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_et"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:hint="Email"
+            android:text="example@email.com"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_et"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:maxLength="10"
+            android:hint="Phone Number"
+            android:text="0988123344"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_et"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:hint="Name"
+            android:text="yair"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_et"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:hint="password"
+            android:text="1234"
+            android:inputType="textPassword"
+            />
+
+
+        <CheckBox
+            android:id="@+id/ckbTerms"
+            android:layout_width="wrap_content"
+            android:buttonTint="@android:color/white"
+            android:text="By signing up you accept the Terms of service of privacy"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"/>
+
+
+
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn"
+            android:layout_marginTop="30dp"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/start_goToSignIn"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Already have an account?"/>
+
+        <TextView
+            android:id="@+id/end_goToSignIn"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textColor="@color/main_clr"
+            android:layout_marginLeft="5dp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

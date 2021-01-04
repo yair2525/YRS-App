@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    >
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtAddress"
+                android:hint="Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimary"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="34sp"
+                android:inputType="text"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true"
+                />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtComment"
+                android:hint="Comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorPrimary"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:inputType="textMultiLine"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true"
+                />
+
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+                <CheckBox
+                    android:id="@+id/cashCheckBox"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="wrap_content"
+                    android:text="Pay by Cash"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"/>
+
+                <ImageView
+                    android:id="@+id/cashCheckBoxIcon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_baseline_attach_money_24"/>
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+            <CheckBox
+                    android:id="@+id/creditCheckBox"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="wrap_content"
+                    android:text="Pay by Credit Card"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"/>
+
+            <ImageView
+                android:id="@+id/creditCheckBoxIcon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:src="@drawable/ic_baseline_credit_card_24"/>
+
+
+    </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
